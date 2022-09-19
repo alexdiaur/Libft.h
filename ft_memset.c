@@ -1,27 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ale <ale@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: fdiaz <fdiaz@student.42madrid.co>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/15 09:39:19 by ale               #+#    #+#             */
-/*   Updated: 2022/09/19 10:36:26 by fdiaz            ###   ########.fr       */
+/*   Created: 2022/09/19 10:41:33 by fdiaz             #+#    #+#             */
+/*   Updated: 2022/09/19 11:53:19 by fdiaz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+void	*ft_memset(void *b, int c, size_t len)
 {
-    return (c >= 32 && c <= 126);
+	size_t			i;
+	unsigned char	*ptr;
+
+	i = 0;
+	ptr = b;
+	while (i < len)
+	{
+		ptr[i] = c;
+		i++;
+	}
+	return (b);
 }
 
-/*#include <ctype.h>
+/*#include <string.h>
 #include <stdio.h>
-
 int main()
 {
-     printf("Con mi versión es print: %d\nCon la original es print: %d\nCon mi version no es print: %d\nCon la original no es print: %d\n", ft_isprint(65), isprint(65), ft_isprint(200), isprint(200));
-    return (0);
+	char str[5] = "Hola";
+	printf("Antes de: %s\n", str);
+	ft_memset(str, '0', 2);
+	printf("Después de: %s", str);
 }*/
