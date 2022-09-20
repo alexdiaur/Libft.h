@@ -6,7 +6,7 @@
 /*   By: fdiaz <fdiaz@student.42madrid.co>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 10:53:23 by fdiaz             #+#    #+#             */
-/*   Updated: 2022/09/13 15:01:48 by fdiaz            ###   ########.fr       */
+/*   Updated: 2022/09/20 14:27:49 by fdiaz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ int	ft_isdigit(int c)
 #include <stdio.h>
 int main()
 {
-	printf("Tendría que dar > 0: mi función: %d, la original: %d\n", ft_isdigit(48), isdigit(48));
-	printf("Tendría que dar 0 : mi función: %d,  la original: %d\n", ft_isdigit(59), isdigit(59));
+	printf("Será > 0: mía: %d, origin: %d\n", ft_isdigit(48), isdigit(48));
+	printf("Será 0 : mía: %d,  origin: %d\n", ft_isdigit(59), isdigit(59));
 }*/
