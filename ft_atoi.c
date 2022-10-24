@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fdiaz <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: fdiaz <fdiaz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 14:44:04 by fdiaz             #+#    #+#             */
-/*   Updated: 2022/09/22 16:58:37 by fdiaz            ###   ########.fr       */
+/*   Updated: 2022/10/18 19:10:40 by fdiaz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 int	ft_atoi(const char *str)
 {
 	int	num;
-	int	result;
+	size_t	result;
 
 	num = 1;
 	result = 0;
-	while (*str <= 32)
+	while (*str == 32 || (*str >= 9 && *str <= 13))
 		str++;
 	if (*str == '+')
 		str++;
@@ -34,6 +34,11 @@ int	ft_atoi(const char *str)
 		result += *str - '0';
 		str++;
 	}
+	if (result > 2147483647 && num > 0)
+		return (-1);
+	if (result > 2147483648 && num < 0)
+		return (0);
+	
 	return (result * num);
 }
 
@@ -42,6 +47,6 @@ int	ft_atoi(const char *str)
 
 int main()
 {
-	printf("Original: %d\nMía : %d", atoi("-50"), ft_atoi("-50"));
+	printf("Original: %d\nMía : %d", atoi("-32254364758697786543234567890876543"), ft_atoi("-567890876546787865789098765"));
 	return (0);
 }*/
