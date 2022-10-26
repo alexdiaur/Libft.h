@@ -6,7 +6,7 @@
 #    By: fdiaz <fdiaz@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/12 15:02:53 by fdiaz             #+#    #+#              #
-#    Updated: 2022/10/18 16:25:16 by fdiaz            ###   ########.fr        #
+#    Updated: 2022/10/26 18:28:12 by fdiaz            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,7 @@ CFLAGS 		=-Wall -Werror -Wextra
 
 RM 			=rm -rf
 
-all 		=$(NAME)
+all: 		$(NAME)
 
 $(NAME):	$(OBJ)	
 			ar -rcs $(NAME) $(OBJ)
@@ -53,6 +53,6 @@ clean:
 fclean:		clean 
 					$(RM) $(NAME) 
 
-re: 		fclean all
+re: 		$(NAME)
 
 .PHONY: 	all clean fclean re

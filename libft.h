@@ -6,7 +6,7 @@
 /*   By: fdiaz <fdiaz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 10:34:45 by fdiaz             #+#    #+#             */
-/*   Updated: 2022/10/18 16:23:52 by fdiaz            ###   ########.fr       */
+/*   Updated: 2022/10/26 17:02:31 by fdiaz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,5 @@ void	*ft_memmove(void *dst, const void *src, size_t len);
 // void	*ft_memchr(const void *s, int c, size_t n);
 // int		ft_memcmp(const void *s1, const void *s2, size_t n);
 // char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
-
-
 
 #endif
