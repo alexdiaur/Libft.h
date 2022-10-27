@@ -3,16 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: fdiaz <fdiaz@student.42.fr>                +#+  +:+       +#+         #
+#    By: ale <ale@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/12 15:02:53 by fdiaz             #+#    #+#              #
-#    Updated: 2022/10/26 18:28:12 by fdiaz            ###   ########.fr        #
+#    Updated: 2022/10/27 11:55:59 by ale              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 		= libft.a
 
-SRC 		=	ft_isalpha.c \
+SRCS 		=	ft_isalpha.c \
 				ft_isdigit.c \
 				ft_strlcpy.c \
 				ft_isalnum.c \
@@ -34,25 +33,27 @@ SRC 		=	ft_isalpha.c \
 				# ft_tolower.c	\
 				# ft_toupper.c	\
 
-OBJ 		=$(SRC:.c=.o)
+OBJS			= $(SRCS:.c=.o)
 
-CC			=gcc
+CC				= gcc
 
-CFLAGS 		=-Wall -Werror -Wextra
+RM				= rm -f
 
-RM 			=rm -rf
+CFLAGS			= -Wall -Wextra -Werror
 
-all: 		$(NAME)
+NAME			= libft.a
 
-$(NAME):	$(OBJ)	
-			ar -rcs $(NAME) $(OBJ)
+all: 			$(NAME)
+
+$(NAME):		$(OBJS)	
+						ar rcs $(NAME) $(OBJS)
 
 clean:		
-			$(RM) $(OBJ)
+						$(RM) $(OBJS)
 
-fclean:		clean 
-					$(RM) $(NAME) 
+fclean:			clean 
+						$(RM) $(NAME) 
 
-re: 		$(NAME)
+re: 					fclean $(NAME)
 
-.PHONY: 	all clean fclean re
+.PHONY: 		all clean fclean re
