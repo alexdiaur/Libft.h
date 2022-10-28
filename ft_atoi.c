@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fdiaz <fdiaz@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ale <ale@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 14:44:04 by fdiaz             #+#    #+#             */
-/*   Updated: 2022/10/26 17:44:49 by fdiaz            ###   ########.fr       */
+/*   Updated: 2022/10/27 11:54:46 by ale              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,29 @@
 
 int	ft_atoi(const char *str)
 {
-	int		num;
+	int		sign;
 	size_t	result;
 
-	num = 1;
+	sign = 1;
 	result = 0;
-	while (*str == 32 || (*str >= 9 && *str <= 13))
+	while (*str == 32 || (*str > 8 && *str < 14))
 		str++;
 	if (*str == '+' || *str == '-')
-		if (*str == '-')
-		num = -1;
-		str++;
-	while (*str != '\0' && *str <= '9' && *str >= '0')
 	{
-		result *= 10;
-		result += *str - '0';
+		if (*str == '-')
+				sign *= -1;
 		str++;
 	}
-	if (result > 2147483647 && num > 0)
+	while (*str != '\0' && *str <= '9' && *str >= '0')
+	{
+		result = result * 10 + (*str - '0');
+		str++;
+	}
+	if (result > 2147483647 && sign == 1)
 		return (-1);
-	if (result > 2147483648 && num < 0)
+	if (result > 2147483648 && sign == -1)
 		return (0);
-	return (result * num);
+	return (result * sign);
 }
 
 // #include <string.h>
