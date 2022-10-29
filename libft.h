@@ -6,7 +6,7 @@
 /*   By: ale <ale@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 10:34:45 by fdiaz             #+#    #+#             */
-/*   Updated: 2022/10/30 00:38:58 by ale              ###   ########.fr       */
+/*   Updated: 2022/10/30 01:13:34 by ale              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
-// int		ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 // void	*ft_memchr(const void *s, int c, size_t n);
 // int		ft_memcmp(const void *s1, const void *s2, size_t n);
 // char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
