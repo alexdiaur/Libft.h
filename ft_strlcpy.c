@@ -6,7 +6,7 @@
 /*   By: ale <ale@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 00:36:49 by fdiaz             #+#    #+#             */
-/*   Updated: 2022/10/29 23:54:52 by ale              ###   ########.fr       */
+/*   Updated: 2022/10/29 23:58:03 by ale              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 	i = 0;
 	srclen = ft_strlen(src);
-	if (!dstsize)
+	if (dstsize == '\0')
 		return (srclen);
 	while (src[i] != '\0' && i < (dstsize -1))
 	{
