@@ -6,7 +6,7 @@
 #    By: ale <ale@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/12 15:02:53 by fdiaz             #+#    #+#              #
-#    Updated: 2022/10/27 13:27:44 by ale              ###   ########.fr        #
+#    Updated: 2022/10/29 12:43:58 by ale              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,10 +21,12 @@ SRCS 		=	ft_isalpha.c \
 				ft_memmove.c \
 				ft_strlcat.c \
 				ft_strlen.c \
-				ft_atoi.c	\
-				ft_bzero.c	\
+				ft_atoi.c \
+				ft_bzero.c \
 				ft_toupper.c \
-				ft_tolower.c
+				ft_tolower.c \
+				ft_strchr.c
+				
 OBJS			= $(SRCS:.c=.o)
 
 CC				= gcc
