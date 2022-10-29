@@ -6,10 +6,9 @@
 #    By: ale <ale@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/12 15:02:53 by fdiaz             #+#    #+#              #
-#    Updated: 2022/10/27 11:55:59 by ale              ###   ########.fr        #
+#    Updated: 2022/10/27 13:27:44 by ale              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
 
 SRCS 		=	ft_isalpha.c \
 				ft_isdigit.c \
@@ -24,15 +23,8 @@ SRCS 		=	ft_isalpha.c \
 				ft_strlen.c \
 				ft_atoi.c	\
 				ft_bzero.c	\
-				# ft_memchr.c	\
-				# ft_memcmp.c	\
-				# ft_strchr.c	\
-				# ft_strncmp.c	\
-				# ft_strnstr.c	\
-				# ft_strrchr.c	\
-				# ft_tolower.c	\
-				# ft_toupper.c	\
-
+				ft_toupper.c \
+				ft_tolower.c
 OBJS			= $(SRCS:.c=.o)
 
 CC				= gcc
