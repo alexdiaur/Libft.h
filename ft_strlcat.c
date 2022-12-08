@@ -6,7 +6,7 @@
 /*   By: ale <ale@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 13:00:11 by ale               #+#    #+#             */
-/*   Updated: 2022/10/29 15:29:14 by ale              ###   ########.fr       */
+/*   Updated: 2022/12/08 10:07:35 by ale              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,14 +32,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dst[i + j] = '\0';
 	return (srclen + i);
 }
-
-/*int main()
-{
-    char destine[] = "Loving Oio to ";
-	char source[] = "the moon and back";
-	size_t i = ft_strlen(source) + ft_strlen(destine) + 1;
-
-	ft_strlcat(destine, source, i);
-	printf("Con mi strlcay el string queda así: %s\n", destine);
-	return (0);
-}*/

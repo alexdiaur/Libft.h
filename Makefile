@@ -6,7 +6,7 @@
 #    By: ale <ale@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/30 01:14:29 by ale               #+#    #+#              #
-#    Updated: 2022/12/08 06:46:58 by ale              ###   ########.fr        #
+#    Updated: 2022/12/08 09:59:22 by ale              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,8 +32,21 @@ SRCS 		=	ft_isalpha.c \
 				ft_strncmp.c \
 				ft_memchr.c \
 				ft_memcmp.c \
-				t_strnstr.c
-				
+				ft_strnstr.c \
+				ft_calloc.c \
+				ft_strdup.c \
+				ft_substr.c \
+				ft_strtrim.c \
+				ft_split.c \
+				ft_itoa.c \
+				ft_strmapi.c \
+				ft_striteri.c \
+				ft_putchar_fd.c \
+				ft_putstr_fd.c \
+				ft_putendl_fd.c \
+				ft_putnbr_fd.c \
+				ft_strjoin.c
+					
 OBJS			= $(SRCS:.c=.o)
 
 CC				= gcc

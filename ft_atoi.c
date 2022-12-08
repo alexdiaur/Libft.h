@@ -6,7 +6,7 @@
 /*   By: ale <ale@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 14:44:04 by fdiaz             #+#    #+#             */
-/*   Updated: 2022/10/27 11:54:46 by ale              ###   ########.fr       */
+/*   Updated: 2022/12/08 09:56:54 by ale              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,13 +38,3 @@ int	ft_atoi(const char *str)
 		return (0);
 	return (result * sign);
 }
-
-// #include <string.h>
-// #include <stdio.h>
-
-// int main(void)
-// {
-// 	printf("Original: %d\n", atoi("-32254364758697786543234567890876543"));
-// 	printf("Mine: %d",  ft_atoi("-567890876546787865789098765"));
-// 	return (0);
-// }

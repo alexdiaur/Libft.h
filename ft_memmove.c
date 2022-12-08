@@ -6,7 +6,7 @@
 /*   By: ale <ale@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/23 23:46:49 by ale               #+#    #+#             */
-/*   Updated: 2022/10/27 11:55:13 by ale              ###   ########.fr       */
+/*   Updated: 2022/12/08 10:03:48 by ale              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,19 +26,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			dst_aux[len] = src_aux[len];
 	return (dst);
 }
-
-/*#include <stdio.h>
-#include <string.h>
-
-int main()
-{
-    unsigned char destino[100];
-    unsigned char fuente[100] = "Guataverygoodsup";
-    size_t n = 9;
-
-    printf("Destino antes del memcpy: %s\n", destino);
-    ft_memmove(destino, fuente, n);
-    printf("Destino después del memcpy:%s\n", destino);
-  
-    return (0);   
-}*/
