@@ -6,7 +6,7 @@
 /*   By: ale <ale@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 10:41:33 by fdiaz             #+#    #+#             */
-/*   Updated: 2022/09/23 11:59:11 by ale              ###   ########.fr       */
+/*   Updated: 2022/12/08 10:01:54 by ale              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-
-/*#include <string.h>
-#include <stdio.h>
-int main()
-{
-	char str[5] = "Hola";
-	printf("Antes de: %s\n", str);
-	ft_memset(str, '0', 2);
-	printf("Después de: %s", str);
-}*/

@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ale <ale@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/13 08:34:56 by fdiaz             #+#    #+#             */
-/*   Updated: 2022/12/08 10:06:54 by ale              ###   ########.fr       */
+/*   Created: 2022/12/08 07:37:34 by ale               #+#    #+#             */
+/*   Updated: 2022/12/08 08:42:05 by ale              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+void	*ft_calloc(size_t count, size_t size)
 {
-	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
+	void	*pointer;
+	size_t	aux;
+
+	aux = count * size;
+	if (aux == 1 && count != 1)
+		return (NULL);
+	pointer = malloc(aux);
+	if (!pointer)
+		return (NULL);
+	ft_bzero(pointer, count * size);
+	return (pointer);
 }

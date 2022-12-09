@@ -6,7 +6,7 @@
 /*   By: ale <ale@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/29 10:50:03 by ale               #+#    #+#             */
-/*   Updated: 2022/10/29 13:08:13 by ale              ###   ########.fr       */
+/*   Updated: 2022/12/08 09:58:21 by ale              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return ((char *)s);
 }
-
-/*int	main()
-{
-	const char	s[] = "Bombonita";
-	int			c;
-	c = 'b';
-	
-	printf("ft_strchr: %s\n", ft_strchr(s, c));
-	printf("strchr: %s\n", strchr(s, c));
-	return (0);
-}*/

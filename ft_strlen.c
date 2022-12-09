@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fdiaz <fdiaz@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ale <ale@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 11:54:24 by fdiaz             #+#    #+#             */
-/*   Updated: 2022/10/14 15:34:51 by fdiaz            ###   ########.fr       */
+/*   Updated: 2022/12/08 10:05:30 by ale              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,3 @@ size_t	ft_strlen(const char *s)
 	i++;
 	return (i);
 }
-
-/*#include <stdio.h>
-
-int main()
-{
-	char str[5] = "Gata";
-	size_t i = ft_strlen(str);
-	printf("Este string tiene %zu caracteres", i);
-
-}*/
